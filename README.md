@@ -66,27 +66,27 @@ Restart Claude Code after installation.
 `/cv-generate` produces structured output like:
 
 ```markdown
-# Your Name
-Senior Software Engineer
+# Jane Doe
+Full-Stack Engineer
 
 ## Skills
-**Backend**: TypeScript (designed), Python (designed), PHP (configured)
-**Frontend**: React (designed), Next.js (configured)
-**Infra**: AWS (designed), Docker (designed), Terraform (configured)
+**Backend**: Go (designed), Python (configured), Ruby (used)
+**Frontend**: React (designed), Vue.js (configured)
+**Infra**: GCP (designed), Kubernetes (configured), Terraform (used)
 
 ## Professional Experience
 
-### Example Corp - Lead Engineer
-Oct 2023 - Feb 2025 | Team size: 5
+### Acme Inc. - Backend Engineer
+Apr 2023 - Mar 2025 | Team size: 8
 
-#### iCalendar Recurrence Engine
-Designed and implemented an RFC5545-compliant recurring task system with
-Redis + SQS + EventBridge batch materialization. Reduced manual scheduling
-workload by 80% across 12 factory sites.
+#### Real-time Notification Service
+Designed a pub/sub notification system handling 50K messages/min using
+Go + Cloud Pub/Sub + WebSocket. Replaced polling-based approach, reducing
+notification latency from 30s to under 500ms.
 
-**Key decision**: Chose event-driven materialization over cron-based approach
-to handle timezone-aware recurrence patterns at scale.
-**Technologies**: TypeScript, AWS SQS, EventBridge, Redis, PostgreSQL
+**Key decision**: Chose Cloud Pub/Sub over self-hosted Kafka to reduce
+operational burden for a 3-person infra team.
+**Technologies**: Go, GCP Cloud Pub/Sub, WebSocket, Redis, PostgreSQL
 ```
 
 ---
