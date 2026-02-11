@@ -93,7 +93,7 @@ operational burden for a 3-person infra team.
 
 ## Commands
 
-15 slash commands organized into five categories.
+11 slash commands organized into five categories.
 
 ### Data Entry
 
@@ -121,14 +121,18 @@ Uses your actual decisions from the database to generate STAR-format
 responses with real context, actions, and measurable results.
 ```
 
-### Content Generation (Render Adapters)
+### Content Generation
 
-| Command              | Description                              |
-|----------------------|------------------------------------------|
-| `/blog-generate`     | Generate technical blog post drafts.     |
-| `/linkedin-generate` | Generate LinkedIn posts.                 |
-| `/talk-generate`     | Generate conference talk proposals.      |
-| `/podcast-generate`  | Generate podcast episode outlines.       |
+| Command    | Description                                                            |
+|------------|------------------------------------------------------------------------|
+| `/render`  | Generate content: `--target blog\|linkedin\|talk\|podcast`            |
+
+```
+/render --target blog --format draft --tone technical
+/render --target linkedin --type achievement
+/render --target talk --format proposal --duration 30
+/render --target podcast --format outline --style solo
+```
 
 ### Career Analytics
 
@@ -136,17 +140,11 @@ responses with real context, actions, and measurable results.
 |---------------------|-----------------------------------------------------|
 | `/career-timeline`  | Visualize career timeline.                          |
 | `/tech-radar`       | Personal technology radar (Adopt/Trial/Assess/Hold).|
-| `/diagnose-career`  | Comprehensive career diagnosis.                     |
-| `/skill-gap`        | Skill gap analysis against target roles.            |
-
-**Example -- skill gap analysis:**
+| `/analyze`          | Career analysis: `--type diagnosis\|skill-gap`      |
 
 ```
-/skill-gap --role "Staff Engineer"
-
-Skills you have that match:     12/18 (67%)
-Skills that need deepening:     3 (Kubernetes: used -> designed)
-Skills missing entirely:        3 (gRPC, Kafka, OpenTelemetry)
+/analyze --type diagnosis --depth thorough
+/analyze --type skill-gap --role "Staff Engineer"
 ```
 
 ### Maintenance
