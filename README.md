@@ -66,7 +66,7 @@ Restart Claude Code after installation.
 `/cv-generate` produces structured output like:
 
 ```markdown
-# Toshiki Matsukuma
+# Your Name
 Senior Software Engineer
 
 ## Skills
@@ -206,7 +206,7 @@ SQLite with WAL mode. 21 tables at schema version 2. Data stored at `~/.career-p
 
 ## Author
 
-Toshiki Matsukuma
+[@blueglasses1995](https://github.com/blueglasses1995)
 
 ## License
 
