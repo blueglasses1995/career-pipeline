@@ -1,0 +1,18 @@
+{
+  "name": "career-pipeline-dev",
+  "description": "Development marketplace for career-pipeline plugin",
+  "owner": {
+    "name": "Toshiki Matsukuma"
+  },
+  "plugins": [
+    {
+      "name": "career-pipeline",
+      "description": "Record work experiences, build queryable knowledge, and render CVs",
+      "version": "1.0.0",
+      "source": "./",
+      "author": {
+        "name": "Toshiki Matsukuma"
+      }
+    }
+  ]
+}

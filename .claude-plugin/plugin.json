@@ -1,0 +1,20 @@
+{
+  "name": "career-pipeline",
+  "version": "1.0.0",
+  "description": "Record work experiences, build queryable knowledge, and render CVs. Interview practice, experience search, and auto-capture from dev sessions.",
+  "author": {
+    "name": "Toshiki Matsukuma"
+  },
+  "repository": "https://github.com/blueglasses1995/career-pipeline",
+  "license": "MIT",
+  "keywords": ["career", "cv", "resume", "interview", "blog", "talk", "podcast", "linkedin", "pipeline", "sqlite"],
+  "mcpServers": {
+    "career-pipeline": {
+      "command": "node",
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/server.js"],
+      "env": {
+        "CAREER_PIPELINE_DATA_DIR": "${CAREER_PIPELINE_DATA_DIR:-}"
+      }
+    }
+  }
+}
