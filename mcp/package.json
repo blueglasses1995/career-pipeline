@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "node --test test/**/*.test.js",
+    "test": "node --test",
     "test:coverage": "c8 --reporter=lcov --reporter=text npm test",
-    "test:watch": "node --test --watch test/**/*.test.js"
+    "test:watch": "node --test --watch"
   },
   "keywords": [
     "mcp",
