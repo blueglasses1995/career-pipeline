@@ -1,16 +1,46 @@
 {
   "name": "career-pipeline-mcp",
   "version": "1.0.0",
+  "description": "MCP server for career-pipeline SQLite database",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node --test test/**/*.test.js",
+    "test:coverage": "c8 --reporter=lcov --reporter=text npm test",
+    "test:watch": "node --test --watch test/**/*.test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "MCP server for career-pipeline SQLite database",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "career",
+    "sqlite",
+    "database",
+    "productivity",
+    "career-management"
+  ],
+  "author": "Toshiki Matsukuma",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blueglasses1995/career-pipeline.git",
+    "directory": "mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/blueglasses1995/career-pipeline/issues"
+  },
+  "homepage": "https://github.com/blueglasses1995/career-pipeline#readme",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "files": [
+    "server.js",
+    "README.md"
+  ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.26.0",
     "better-sqlite3": "^12.6.2"
+  },
+  "devDependencies": {
+    "c8": "^11.0.0"
   }
 }
