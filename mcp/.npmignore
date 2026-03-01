@@ -1,0 +1,38 @@
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+coverage/
+.nyc_output/
+.c8rc.json
+
+# Development configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build artifacts
+*.log
+npm-debug.log*
+.DS_Store
+
+# Data files (never publish user data)
+*.db
+*.db-shm
+*.db-wal
+dumps/
+
+# Git and CI/CD
+.git/
+.gitignore
+.github/
+
+# Environment files
+.env
+.env.*
+
+# Documentation (in main repo)
+docs/
