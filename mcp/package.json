@@ -13,7 +13,10 @@
     "mcp",
     "model-context-protocol",
     "career",
+    "job-search",
     "sqlite",
+    "ai-assistant",
+    "claude",
     "database",
     "productivity",
     "career-management"
@@ -34,7 +37,8 @@
   },
   "files": [
     "server.js",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.26.0",

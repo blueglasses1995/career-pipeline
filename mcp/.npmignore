@@ -25,6 +25,14 @@ npm-debug.log*
 *.db-wal
 dumps/
 
-# Git
+# Git and CI/CD
 .git/
 .gitignore
+.github/
+
+# Environment files
+.env
+.env.*
+
+# Documentation (in main repo)
+docs/
